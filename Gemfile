@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '~> 3.2.16'
+gem 'rails', '~> 5.0.0'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
@@ -11,26 +11,26 @@ gem 'bourbon'
 gem 'cocoon'
 gem 'delayed_job_active_record'
 gem 'flutie', '= 1.3.3'
-gem 'formtastic'
+gem 'formtastic', '>= 2.2.1'
 gem 'high_voltage', '~> 1.2'
 gem 'hirefireapp'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 gem 'newrelic_rpm'
-gem 'omniauth-oauth2'
+gem 'omniauth-oauth2', '>= 1.2.0'
 gem 'paperclip'
 gem 'pg'
 gem 'sass'
-gem 'strong_parameters'
-gem 'swfobject-rails'
+gem 'strong_parameters', '>= 0.1.6'
+gem 'swfobject-rails', '>= 2.0'
 gem 'tddium'
-gem 'thin'
+gem 'thin', '>= 1.5.0'
 gem 'yam', '~> 2.0.0'
-gem 'zclip-rails'
+gem 'zclip-rails', '>= 0.0.3'
 
 # Gems used only for assets, not required in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.2'
-  gem 'sass-rails', '~> 3.2'
+  gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
+  gem 'sass-rails', '~> 5.0', '>= 5.0.5'
   gem 'uglifier', '>= 1.0'
 end
 
@@ -39,19 +39,19 @@ group :development do
   gem 'binding_of_caller'                  # Must stay only in development group
   gem 'bundler', '>= 1.2.0.pre'
   gem 'foreman', '~> 0.46'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.2'
 end
 
 group :test do
-  gem 'capybara-webkit', '~> 0.14.0'
+  gem 'capybara-webkit', '~> 0.14.2'
   gem 'database_cleaner'
   gem 'email_spec'
-  gem 'factory_girl_rails'
-  gem 'jasmine'
+  gem 'factory_girl_rails', '>= 4.2.1'
+  gem 'jasmine', '>= 2.0.0'
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
-  gem 'sinatra'
+  gem 'sinatra', '>= 2.0.0'
   gem 'timecop'
   gem 'turnip', '1.0'
 end
@@ -60,10 +60,10 @@ group :development, :test do
   gem 'awesome_print'
   gem 'dotenv'
   gem 'guard-jasmine', require: false
-  gem 'jasminerice'
+  gem 'jasminerice', '>= 0.0.10'
   gem 'mail_view'
   gem 'rspec-rails', '~> 2.14.0'
-  gem 'sham_rack'
+  gem 'sham_rack', '>= 1.3.4'
 end
 
 group :development, :test, :tddium_ignore do
@@ -71,6 +71,6 @@ group :development, :test, :tddium_ignore do
 end
 
 group :staging, :production do
-  gem 'sprockets-redirect'
+  gem 'sprockets-redirect', '>= 0.1.0'
   gem 'rails_12factor'
 end
