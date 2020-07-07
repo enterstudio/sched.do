@@ -14,7 +14,7 @@ gem 'flutie', '= 1.3.3'
 gem 'formtastic'
 gem 'high_voltage', '~> 1.2'
 gem 'hirefireapp'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 gem 'newrelic_rpm'
 gem 'omniauth-oauth2'
 gem 'paperclip'
@@ -25,7 +25,7 @@ gem 'swfobject-rails'
 gem 'tddium'
 gem 'thin'
 gem 'yam', '~> 2.0.0'
-gem 'zclip-rails'
+gem 'zclip-rails', '>= 0.0.1'
 
 # Gems used only for assets, not required in production environments by default.
 group :assets do
