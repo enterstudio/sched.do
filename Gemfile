@@ -22,9 +22,9 @@ gem 'pg'
 gem 'sass'
 gem 'strong_parameters'
 gem 'swfobject-rails'
-gem 'tddium'
+gem 'tddium', '>= 1.25.5'
 gem 'thin'
-gem 'yam', '~> 2.0.0'
+gem 'yam', '~> 2.1.1'
 gem 'zclip-rails'
 
 # Gems used only for assets, not required in production environments by default.
@@ -45,10 +45,10 @@ end
 group :test do
   gem 'capybara-webkit', '~> 0.14.0'
   gem 'database_cleaner'
-  gem 'email_spec'
+  gem 'email_spec', '>= 1.4.0'
   gem 'factory_girl_rails'
   gem 'jasmine'
-  gem 'launchy'
+  gem 'launchy', '>= 2.2.0'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
   gem 'sinatra'
