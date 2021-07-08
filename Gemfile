@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '~> 3.2.16'
+gem 'rails', '~> 4.0.0'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
@@ -14,23 +14,23 @@ gem 'flutie', '= 1.3.3'
 gem 'formtastic'
 gem 'high_voltage', '~> 1.2'
 gem 'hirefireapp'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 2.2.1'
 gem 'newrelic_rpm'
 gem 'omniauth-oauth2'
 gem 'paperclip'
 gem 'pg'
 gem 'sass'
 gem 'strong_parameters'
-gem 'swfobject-rails'
+gem 'swfobject-rails', '>= 2.0'
 gem 'tddium'
 gem 'thin'
 gem 'yam', '~> 2.0.0'
-gem 'zclip-rails'
+gem 'zclip-rails', '>= 0.0.3'
 
 # Gems used only for assets, not required in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.2'
-  gem 'sass-rails', '~> 3.2'
+  gem 'coffee-rails', '~> 4.0', '>= 4.0.0'
+  gem 'sass-rails', '~> 4.0', '>= 4.0.0'
   gem 'uglifier', '>= 1.0'
 end
 
@@ -39,14 +39,14 @@ group :development do
   gem 'binding_of_caller'                  # Must stay only in development group
   gem 'bundler', '>= 1.2.0.pre'
   gem 'foreman', '~> 0.46'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.2'
 end
 
 group :test do
   gem 'capybara-webkit', '~> 0.14.0'
   gem 'database_cleaner'
   gem 'email_spec'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.2.1'
   gem 'jasmine'
   gem 'launchy'
   gem 'shoulda-matchers'
@@ -60,7 +60,7 @@ group :development, :test do
   gem 'awesome_print'
   gem 'dotenv'
   gem 'guard-jasmine', require: false
-  gem 'jasminerice'
+  gem 'jasminerice', '>= 0.0.10'
   gem 'mail_view'
   gem 'rspec-rails', '~> 2.14.0'
   gem 'sham_rack'
