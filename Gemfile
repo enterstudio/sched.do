@@ -6,7 +6,7 @@ gem 'rails', '~> 3.2.16'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
-gem 'aws-sdk', '~> 1.3.4'
+gem 'aws-sdk', '~> 1.3.9'
 gem 'bourbon'
 gem 'cocoon'
 gem 'delayed_job_active_record'
@@ -35,7 +35,7 @@ group :assets do
 end
 
 group :development do
-  gem 'better_errors'                      # Must stay only in development group
+  gem 'better_errors'                      , '>= 2.8.0' # Must stay only in development group
   gem 'binding_of_caller'                  # Must stay only in development group
   gem 'bundler', '>= 1.2.0.pre'
   gem 'foreman', '~> 0.46'
@@ -43,7 +43,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara-webkit', '~> 0.14.0'
+  gem 'capybara-webkit', '~> 0.14.2'
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'factory_girl_rails'
