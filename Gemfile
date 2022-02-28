@@ -6,7 +6,7 @@ gem 'rails', '~> 3.2.16'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
-gem 'aws-sdk', '~> 1.3.4'
+gem 'aws-sdk', '~> 1.3.9'
 gem 'bourbon'
 gem 'cocoon'
 gem 'delayed_job_active_record'
@@ -43,7 +43,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara-webkit', '~> 0.14.0'
+  gem 'capybara-webkit', '~> 0.14.2'
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'factory_girl_rails'
