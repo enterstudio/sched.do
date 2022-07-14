@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '~> 3.2.16'
+gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
@@ -21,7 +21,7 @@ gem 'paperclip'
 gem 'pg'
 gem 'sass'
 gem 'strong_parameters'
-gem 'swfobject-rails'
+gem 'swfobject-rails', '>= 2.0'
 gem 'tddium'
 gem 'thin'
 gem 'yam', '~> 2.0.0'
