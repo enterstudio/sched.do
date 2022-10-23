@@ -16,7 +16,7 @@ gem 'high_voltage', '~> 1.2'
 gem 'hirefireapp'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
-gem 'omniauth-oauth2'
+gem 'omniauth-oauth2', '>= 1.2.0'
 gem 'paperclip'
 gem 'pg'
 gem 'sass'
@@ -29,8 +29,8 @@ gem 'zclip-rails'
 
 # Gems used only for assets, not required in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.2'
-  gem 'sass-rails', '~> 3.2'
+  gem 'coffee-rails', '~> 3.2', '>= 3.2.2'
+  gem 'sass-rails', '~> 3.2', '>= 3.2.6'
   gem 'uglifier', '>= 1.0'
 end
 
@@ -43,11 +43,11 @@ group :development do
 end
 
 group :test do
-  gem 'capybara-webkit', '~> 0.14.0'
+  gem 'capybara-webkit', '~> 0.14.2'
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'factory_girl_rails'
-  gem 'jasmine'
+  gem 'jasmine', '>= 2.0.0'
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
