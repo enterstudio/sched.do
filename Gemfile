@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '~> 3.2.16'
+gem 'rails', '~> 4.0.0'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
@@ -21,16 +21,16 @@ gem 'paperclip'
 gem 'pg'
 gem 'sass'
 gem 'strong_parameters'
-gem 'swfobject-rails'
+gem 'swfobject-rails', '>= 2.0'
 gem 'tddium'
 gem 'thin'
 gem 'yam', '~> 2.0.0'
-gem 'zclip-rails'
+gem 'zclip-rails', '>= 0.0.3'
 
 # Gems used only for assets, not required in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.2'
-  gem 'sass-rails', '~> 3.2'
+  gem 'coffee-rails', '~> 4.0', '>= 4.0.0'
+  gem 'sass-rails', '~> 4.0', '>= 4.0.0'
   gem 'uglifier', '>= 1.0'
 end
 
@@ -39,7 +39,7 @@ group :development do
   gem 'binding_of_caller'                  # Must stay only in development group
   gem 'bundler', '>= 1.2.0.pre'
   gem 'foreman', '~> 0.46'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.2'
 end
 
 group :test do
