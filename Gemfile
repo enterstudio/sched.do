@@ -51,7 +51,7 @@ group :test do
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
-  gem 'sinatra'
+  gem 'sinatra', '>= 4.0.0'
   gem 'timecop'
   gem 'turnip', '1.0'
 end
