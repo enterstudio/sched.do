@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '~> 3.2.16'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.9'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
@@ -30,7 +30,7 @@ gem 'zclip-rails'
 # Gems used only for assets, not required in production environments by default.
 group :assets do
   gem 'coffee-rails', '~> 3.2'
-  gem 'sass-rails', '~> 3.2'
+  gem 'sass-rails', '~> 6.0', '>= 6.0.0'
   gem 'uglifier', '>= 1.0'
 end
 
