@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
-gem 'rails', '~> 3.2.16'
+gem 'rails', '~> 4.0.0'
 
 gem 'airbrake', '~> 3.1'
 gem 'attr_encrypted'
@@ -11,10 +11,10 @@ gem 'bourbon'
 gem 'cocoon'
 gem 'delayed_job_active_record'
 gem 'flutie', '= 1.3.3'
-gem 'formtastic'
+gem 'formtastic', '>= 4.0.0'
 gem 'high_voltage', '~> 1.2'
 gem 'hirefireapp'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.0'
 gem 'newrelic_rpm'
 gem 'omniauth-oauth2'
 gem 'paperclip'
@@ -29,8 +29,8 @@ gem 'zclip-rails'
 
 # Gems used only for assets, not required in production environments by default.
 group :assets do
-  gem 'coffee-rails', '~> 3.2'
-  gem 'sass-rails', '~> 3.2'
+  gem 'coffee-rails', '~> 4.0', '>= 4.0.0'
+  gem 'sass-rails', '~> 6.0', '>= 6.0.0'
   gem 'uglifier', '>= 1.0'
 end
 
@@ -62,7 +62,7 @@ group :development, :test do
   gem 'guard-jasmine', require: false
   gem 'jasminerice'
   gem 'mail_view'
-  gem 'rspec-rails', '~> 2.14.0'
+  gem 'rspec-rails', '~> 4.0.0'
   gem 'sham_rack'
 end
 
