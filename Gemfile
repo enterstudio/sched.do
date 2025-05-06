@@ -62,7 +62,7 @@ group :development, :test do
   gem 'guard-jasmine', require: false
   gem 'jasminerice'
   gem 'mail_view'
-  gem 'rspec-rails', '~> 2.14.0'
+  gem 'rspec-rails', '~> 8.0.0'
   gem 'sham_rack'
 end
 
